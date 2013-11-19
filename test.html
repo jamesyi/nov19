@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+
+<style>
+body{
+ background-image: url(lol.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+#clickme{
+	width:500px;
+	height:50px;
+	background-color:black;
+}
+</style>
+
+</head>
+<script>
+
+$(document).ready(function(){
+
+
+
+  $('#clickme').click(function(){
+	  var src = $(this).attr('src');
+	  console.log(src);
+	  $('body').css('-webkit-filter:','grayscale(100%);'
+		  
+		  
+	  );
+	  
+  });
+});
+</script>
+
+
+
+<body>
+
+
+<div id="clickme"></div>
+
+
+
+
+
+</body>
+</html>
